@@ -14,7 +14,7 @@ import React from "react";
 import ResponsiveComponent from "../ResponsiveComponent";
 import clsx from "clsx";
 import { motion } from "framer-motion";
-import { Instance } from "@react-three/drei";
+// import { Instance } from "@react-three/drei";
 
 const getIcon = (icon) => {
   switch (icon) {
