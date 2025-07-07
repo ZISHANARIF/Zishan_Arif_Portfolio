@@ -4,13 +4,16 @@
 
 @layer base {
   :root {
-    --background: 27 27 27;
+    --background: 23 23 23;
     --foreground: 225 225 225;
     --muted: 115 115 115;
-    --accent: 254 254 91;
+    --accent: 105 37 216;
+/* background-color: #737373; */
     /* hex value of rgb(254,254,91) color is  #FEFE5B  */
+
   }
 }
+ 
 
 @layer utilities {
   .pause {
@@ -18,6 +21,7 @@
   }
 
   .custom-bg {
+    /* background-color: rgb(30, 207, 148); */
     @apply bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px] shadow-glass-inset hover:shadow-glass-sm;
   }
 }
