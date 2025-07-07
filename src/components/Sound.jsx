@@ -70,21 +70,26 @@ const Sound = () => {
     } else {
       setShowModal(true);
     }
-  }, []);
+
+    return () => {
+      ["click", "keydown", "touchstart"].forEach((event) =>
+        document.removeEventListener(event, handleFirstUserInteraction)
+      );
+    };
+  }, [handleFirstUserInteraction]); // Add handleFirstUserInteraction to dependency array
 
   const toggle = () => {
     const newState = !isPlaying;
-    setIsPlaying(!isPlaying);
+    setIsPlaying(newState);
     newState ? audioRef.current.play() : audioRef.current.pause();
     localStorage.setItem("musicConsent", String(newState));
     localStorage.setItem("consentTime", new Date().toISOString());
     setShowModal(false);
   };
+
   return (
     <div className="fixed top-4 right-2.5 xs:right-4 z-50 group">
-      {showModal && (
-        <Modal onClose={() => setShowModal(false)} toggle={toggle} />
-      )}
+      {showModal && <Modal onClose={() => setShowModal(false)} toggle={toggle} />}
 
       <audio ref={audioRef} loop>
         <source src={"/audio/birds39-forest-20772.mp3"} type="audio/mpeg" />
