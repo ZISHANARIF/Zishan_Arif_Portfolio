@@ -53,49 +53,104 @@ const AboutDetails = () => {
           </p>
         </ItemLayout>
 
-        <ItemLayout
-          className={
-            " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
-          }
-        >
-          <h3 className="font-semibold text-2xl sm:text-4xl text-left text-[#6925d8]">
-            Experience
-          </h3>
-          <div className="w-full text-[#6925d8] text-base sm:text-lg font-semibold mt-1">
-            <p className="mb-1">Lead Sure Media, Noida</p>
-            <div className="flex justify-between items-center w-full">
-              <span className="text-left">Web Developer & Designer (Onsite)</span>
-              <span className="text-right">June 2025  - Present</span>
-            </div>
-          </div>
-          <p className="text-sm sm:text-base text-left mt-2 font-light">
-            <p> <span className="mr-5">⇨</span> Designed and developed full-stack websites with a focus on clean, responsive UI using HTML,</p><p className="ml-10"> CSS, JavaScript, and modern frameworks.</p>
-            <p> <span className="mr-5">⇨</span> Converted design references into pixel-perfect layouts, ensuring 100% design accuracy across all</p><p className="ml-10"> devices and browsers</p>
-            <p> <span className="mr-5">⇨</span> Standardized typography and color systems to ensure design consistency and smoother </p><p className="ml-10">developer handoff.</p>
-            <p> <span className="mr-5">⇨</span> Built responsive, SEO-friendly pages with HTML, CSS, JS, Bootstrap, and React.js.</p>
-            <p> <span className="mr-5">⇨</span> Contributed to backend development using mongoDB, PHP and SQL.</p>
-            <p> <span className="mr-5">⇨</span> Removed redundant styles and scripts using AI tools, improving performance.</p>
-            <p> <span className="mr-5">⇨</span> Participated in discussions with senior developers to share progress, gather feedback, and make </p> <p className="ml-10">improvements.</p>
-          </p>
+     
+<ItemLayout className="col-span-full lg:col-span-8 row-span-2 flex-col items-start">
+  <h3 className="font-semibold text-2xl sm:text-4xl text-left text-[#6925d8]">
+    Experience
+  </h3>
 
-          <div className="w-full text-[#6925d8] text-base sm:text-lg font-semibold mt-1">
-            <p className="mb-1">CollegePur, Ghaziabad</p>
-            <div className="flex justify-between items-center w-full">
-              <span className="text-left">Frontend Web Developer (Remote)</span>
-              <span className="text-right">Feb 2025  - June 2025</span>
-            </div>
-          </div>
+  {/* Lead Sure Media */}
+  <div className="w-full text-[#6925d8] text-base sm:text-lg font-semibold mt-1">
+    <p className="mb-1">Lead Sure Media, Noida</p>
+    <div className="flex flex-col sm:flex-row justify-between sm:items-center w-full">
+      <span>Web Developer & Designer (Onsite)</span>
+      <span className="sm:text-right mt-1 sm:mt-0">June 2025 - Present</span>
+    </div>
+  </div>
 
-          <p className="text-sm sm:text-base text-left mt-2 font-light">
-            <p> <span className="mr-5">⇨</span> Responsible for developing and maintaining responsive user interfaces, ensuring a consistent and </p><p className="ml-10"> optimized user experience across different devices and browsers.</p>
-            <p> <span className="mr-5">⇨</span> Collaborated with cross-functional teams to integrate APIs and implement performance </p><p className="ml-10">enhancements  for smooth functionality.</p>
-            <p> <span className="mr-5">⇨</span> Contributed to building scalable and reusable components using React.js, while maintaining</p><p className="ml-10">clean and maintainable code to support long-term project sustainability.</p>
-            <p> <span className="mr-5">⇨</span> Reviewed peer code to ensure readability, optimization, and adherence to coding standards </p> <p className="ml-10">used Git for version control to enable efficient and seamless collaboration with team members.</p>
-          </p>
+  <ul className="text-sm sm:text-base text-left mt-2 font-light space-y-2">
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Designed and developed full-stack websites with a focus on clean, responsive UI
+        using HTML, CSS, JavaScript, and modern frameworks.
+      </span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Converted design references into pixel-perfect layouts, ensuring design accuracy across
+        all devices and browsers.
+      </span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Standardized typography and color systems for design consistency and smoother developer handoff.
+      </span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Built responsive, SEO-friendly pages with HTML, CSS, JS, Bootstrap, and React.js.
+      </span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Contributed to backend development using MongoDB, PHP and SQL.
+      </span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Removed redundant styles and scripts using AI tools, improving performance.
+      </span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Participated in discussions with senior developers to share progress, gather feedback, and improve features.
+      </span>
+    </li>
+  </ul>
 
+  {/* CollegePur */}
+  <div className="w-full text-[#6925d8] text-base sm:text-lg font-semibold mt-4">
+    <p className="mb-1">CollegePur, Ghaziabad</p>
+    <div className="flex flex-col sm:flex-row justify-between sm:items-center w-full">
+      <span>Frontend Web Developer (Remote)</span>
+      <span className="sm:text-right mt-1 sm:mt-0">Feb 2025 - June 2025</span>
+    </div>
+  </div>
 
-
-        </ItemLayout>
+  <ul className="text-sm sm:text-base text-left mt-2 font-light space-y-2">
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Developed and maintained responsive user interfaces, ensuring consistent UX across devices and browsers.
+      </span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Collaborated with cross-functional teams to integrate APIs and implement performance enhancements.
+      </span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Built scalable and reusable components using React.js, maintaining clean and maintainable code.
+      </span>
+    </li>
+    <li className="flex items-start">
+      <span className="mr-2">⇨</span>
+      <span>
+        Reviewed peer code to ensure optimization and used Git for version control, enabling seamless collaboration.
+      </span>
+    </li>
+  </ul>
+</ItemLayout>
 
 
 
